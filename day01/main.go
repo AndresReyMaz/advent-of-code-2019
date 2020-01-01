@@ -3,7 +3,6 @@ package main
 import (
   "fmt"
   "io"
-  "math"
   "strconv"
 )
 
@@ -22,7 +21,7 @@ func readInput() []int {
 }
 
 func calculateFuel(mass int) int {
-  return int(math.Floor(float64(mass) / 3.0)) - 2
+  return mass / 3 - 2
 }
 
 func part1(input []int) int {
